@@ -1,0 +1,240 @@
+/* Общие стили для всего документа */
+*{
+    margin: 0px;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background: url("../imges/Снимок экрана 2024-10-20 093540.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовка */
+header{
+    background: linear-gradient(90deg, rgb(4, 40, 86) 30%, rgb(0, 0, 0) 100%);
+    color: white;
+    padding: 20px 0;
+    z-index: 3;
+    width: 100%;
+    position: fixed;  /* фиксированное позиционирование */
+    position: relative;
+}
+
+/* Стили для навигации */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Стили для логотипа */
+.logo-img img{
+    width: 100px;
+}
+
+/* Стили для поля поиска */
+.input-box{
+    display: flex;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.15);
+    border-radius: 9px;
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+
+/* Стили для кнопки поиска */
+.input-search{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Стили для ввода текста */
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    border-radius: 9px;
+}
+
+/* Стили для изображения солнца */
+.sun{
+    max-width: 150px;
+    margin-left: 180px;
+    margin-right: auto;
+}
+
+/* Стили для ссылок */
+.box{
+    display: flex;
+    gap: 40px;
+}
+
+.link{
+    transition-duration: 0.5s;
+}
+
+.link:hover{
+    font-size: 18px;
+}
+
+/* Убираем подчеркивание у ссылок */
+.box a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Стили для основного видео */
+.main-video{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+/* Стили для контейнера видео */
+.img-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для видео */
+.img-video video{
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для контента, связанного с изображением */
+.img-content{
+    font-size: 25px;
+    color: #23057b;
+    padding: 50px 70px;
+    width: 50%;
+    z-index: 1;
+    position: relative;
+}
+
+/* Стили для текста контента */
+.cont{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок */
+.btn{
+    padding: 12px 15px;
+    align-items: center;
+    border: none;
+    column-gap: 7px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgb(5, 39, 84) 63%, rgb(62, 31, 219) 100%);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Стили для кнопок при наведении */
+.btn:hover{
+    transform: scale(1.1);
+    opacity: 85%;
+}
+
+/* Стили для контейнера планет */
+.pl-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 50px;
+    margin: 0 auto;
+}
+
+/* Стили для текста про планеты */
+.planets-text{
+    margin: 100px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Стили для планет */
+.planets{
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+/* Стили для планет при наведении */
+.planets:hover{
+    transform: scale(1.1);
+}
+
+/* Стили для изображения планет */
+.planets img{
+    height: 200px;
+}
+
+/* Стили для контейнера с космосом */
+.cosmos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Стили для изображения космоса */
+.cosmos img{
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для текста про космос */
+.text-cosmos{
+    padding: 100px;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+/* Общие стили для изображений */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Общие стили для ссылок */
+a{
+    text-decoration: none;
+    color: white;
+}
